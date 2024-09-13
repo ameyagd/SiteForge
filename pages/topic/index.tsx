@@ -50,7 +50,7 @@ const Page: FC<TPage> = (props) => {
         secondary={props.globalConfig.themeColors.secondary}
       >
         <Head>
-          <title>| domain | Tagline</title>
+          <title>| SiteForge | This is a preview site</title>
         </Head>
         <Header {...props.headerConfig.data} />
         <MonetizationSectionRenderer

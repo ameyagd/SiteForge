@@ -59,7 +59,7 @@ const Page: FC<TCategoryListingPage> = (props) => {
       secondary={globalConfig.themeColors.secondary}
     >
       <Head>
-        <title>{`${categoryName} | domain | Tagline`}</title>
+        <title>{`${categoryName} | SiteForge | This is a preview site`}</title>
       </Head>
       <Header {...headerConfig.data} />
       <SectionsContainer

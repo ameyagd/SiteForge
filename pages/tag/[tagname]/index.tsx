@@ -58,7 +58,7 @@ const Page: FC<TTagListingPage> = (props) => {
       secondary={globalConfig.themeColors.secondary}
     >
       <Head>
-        <title>{`${tag} | domain | Tagline`}</title>
+        <title>{`${tag} | SiteForge | This is a preview site`}</title>
       </Head>
       <Header {...headerConfig.data} />
       <SectionsContainer

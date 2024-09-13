@@ -52,7 +52,7 @@ const Page: FC<TSearchPage> = (props) => {
       secondary={globalConfig.themeColors.secondary}
     >
       <Head>
-        <title>Blog | domain | Tagline</title>
+        <title>Blog | SiteForge | This is a preview site</title>
       </Head>
       <Header {...headerConfig.data} />
       <ArticleListing

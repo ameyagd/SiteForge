@@ -36,7 +36,7 @@ const Page: FC<THomePage> = (props) => {
       secondary={globalConfig.themeColors.secondary}
     >
       <Head>
-        <title>Domain | Tagline</title>
+        <title>SiteForge | This is a preview site</title>
       </Head>
       <Header {...headerConfig.data} />
       <SectionsContainer
