@@ -2,8 +2,9 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const ArticleTitle = styled.h1`
-  font-size: clamp(40px, 3vw, 50px);
+  font-size: clamp(30px, 2vw, 40px);
   font-weight: 700;
+  color: var(--primary-color);
 `;
 
 export const ArticleContentContainer = styled.div`

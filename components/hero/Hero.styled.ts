@@ -92,13 +92,13 @@ export const HeroHeading = styled(Link)<TCustomStyles & TPreventRedirect>`
   ${(props) => {
     return css`
       --line-count: 2;
-      font-size: clamp(36px, 3vw, 50px);
+      font-size: clamp(30px, 2vw, 50px);
       font-weight: 700;
       margin-top: 24px;
       color: var(--text-color);
       transition: color 300ms ease;
       cursor: ${props.$preventRedirect ? "default" : "pointer"};
-      ${getTruncateTextCss(1.5, false)}
+      ${getTruncateTextCss(1.2, false)}
 
       ${!props.$preventRedirect
         ? css`

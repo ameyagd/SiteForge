@@ -33,9 +33,9 @@ export const Header = styled.div`
 
   & ${ArticleTitle} {
     --line-count: 4;
-    ${getTruncateTextCss(1.5, false)};
+    ${getTruncateTextCss(1.2, false)};
     font-weight: 700 !important;
-    margin-top: 24px;
+    margin-top: 18px;
   }
 
   @media ${QUERIES.tabletAndBelow} {
