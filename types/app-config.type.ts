@@ -28,6 +28,10 @@ import type {
   TPrivacyPolicyConfig,
   TPrivacyPolicyStyleConfig,
 } from "@/components/privacy-policy/types";
+import type {
+  TTermsOfServiceConfig,
+  TTermsOfServiceStyleConfig,
+} from "@/components/terms-of-service/types";
 import type { TSectionConfig } from "@/components/section/types";
 import type { TTagProps } from "@/components/tag";
 import type { THeroConfig, THeroStyleConfig } from "@/components/hero";
@@ -58,6 +62,7 @@ export type TPageKey =
   | "about_us"
   | "privacy_policy"
   | "contact_us"
+  | "terms_of_service"
   | "monetization_page";
 
 export type TGlobalConfig = {
@@ -82,6 +87,7 @@ export type TSectionType =
   | "about-us"
   | "contact-us"
   | "privacy-policy"
+  | "terms-of-service"
   | "article-listing"
   | "article-page"
   | "category-listing"
@@ -99,6 +105,7 @@ type TSectionKeyWithBg = Extract<
   | "about-us"
   | "contact-us"
   | "privacy-policy"
+  | "terms-of-service"
   | "article-listing"
   | "article-page"
   | "category-listing"
@@ -162,6 +169,12 @@ export type TSectionItem<T extends TSectionKeyWithBg = any> = T extends "hero"
         config: TPrivacyPolicyConfig;
         styleConfig?: TPrivacyPolicyStyleConfig;
       };
+    } & TShowBgConfig
+  : T extends "terms-of-service"
+  ? {
+      id: string;
+      type: "terms-of-service";
+      data: { config: TTermsOfServiceConfig; styleConfig?: TTermsOfServiceStyleConfig };
     } & TShowBgConfig
   : T extends "article-page"
   ? {
